@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <title>Produto Especificado</title>
+  <style>
+    body {
+      background-position: 400% 100%;
+      view-transition-name: change-back;
+      
+      background-image: linear-gradient(to left, rgb(240, 226, 200), rgb(240, 229, 209), rgba(128, 128, 128, 0.521), rgba(128, 128, 128, 0.432), white, white, white);
+    }
+
+    @keyframes changeback{
+      0%{
+       background-image: linear-gradient(to left, rgb(63, 63, 62), rgb(148, 145, 140), rgba(128, 128, 128, 0.521), rgba(155, 152, 152, 0.432), rgb(202, 198, 198), rgb(204, 202, 202), rgb(167, 160, 160));
+      }
+      20%{
+        background-image: linear-gradient(to left, rgb(194, 190, 183), rgb(163, 158, 149), rgba(189, 185, 185, 0.521), rgba(240, 236, 236, 0.432), rgb(116, 112, 112), rgb(110, 108, 108), rgb(97, 96, 96));
+      }
+      50%{
+        background-image: linear-gradient(to left, rgb(240, 226, 200), rgb(240, 229, 209), rgba(128, 128, 128, 0.521), rgba(128, 128, 128, 0.432), white, white, white);
+      }
+    }
+
+    ::view-transition-old,
+    ::view-transition-new{
+      animation: changeback 2s ease;
+    }
+
+    .produ-description-container {
+      margin-left: -80%;
+      margin-top: 10%;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .produ-description-container p {
+      font-size: 1.2em;
+      letter-spacing: 3px;
+      font-weight: lighter;
+    }
+
+    aside {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 50px;
+      margin-top: 30px;
+      position: relative;
+      height: 250px;
+    }
+
+    #iimage-righterfadein {
+      height: 200px;
+      width: 300px;
+      animation: fadein-right 5s ease;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    #iimage-righterbacklazyfadein {
+      height: 200px;
+      width: 300px;
+      animation: fadein-backerase 8s ease-in;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+
+    @keyframes fadein-right {
+      0% {
+        margin-right: -100px;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      50% {
+        margin-right: 10px;
+        opacity: 1;
+        filter: none;
+      }
+      100% {
+        margin-right: 0;
+        opacity: 1;
+        filter: brightness(1.1);
+      }
+    }
+
+    @keyframes fadein-backerase {
+      0% {
+        margin-right: -120px;
+        opacity: 0;
+        filter: blur(4px);
+      }
+      50% {
+        margin-right: 0;
+        opacity: 0.5;
+        filter: blur(1px);
+      }
+      100% {
+      
+        opacity: 1;
+        filter: brightness(1.2);
+      }
+    }
+
+    a {
+    display: flex;
+      text-decoration: none;
+      width: 40px;
+      border-radius: 20px;
+      border: 1px solid black;
+      padding: 10px 20px;
+      padding-left: 20px;
+     margin-left: -20px;
+      box-shadow: -4px 4px 1px #7c0202;
+      background-color: rgb(143, 5, 5);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+      color: rgb(214, 207, 207);
+      font-weight: lighter;
+    }
+
+    footer {
+      background-color: black;
+      padding: 40px 30px;
+      margin-top: 170px;
+      height: 110px;
+      width: 100%;
+    }
+
+    .footer-textcontent {
+      border-left: 2px solid white;
+      padding-left: 10px;
+      color: white;
+      letter-spacing: 4px;
+    }
+
+   
+    
+
+      #iimage-righterfadein,
+      #iimage-righterbacklazyfadein {
+       
+        margin-top: 20px;
+      }
+
+      #iimage-righterbacklazyfadein{
+        height: 930px;
+        width: 1200px;
+        margin-top: -16%;
+        margin-right: -100px;
+      }
+
+      #iimage-righterfadein{
+        height: 800px;
+        margin-top: -14%;
+      }
+
+      .produ-description-container {
+        text-align: center;
+      }
+
+      a {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      #ibackpgine-bottom{
+        margin-left: 18px;
+      }
+
+      h2{
+         font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+ font-weight: lighter;
+      }
+
+      p{
+        font-family: "Cormorant Garamond", serif;
+  
+      }
+    
+      @media screen and (max-width: 800px){
+        h2{
+          margin-left: 113px;
+        }
+        p{
+          margin-left: 120px;
+        }
+    #ibackgine-bottom{
+      margin-left: 10px;
+    }
+   
+a{
+  margin-left: 20%;
+  border: none;
+}}
+
+      a:hover{
+        transform: scale(1.1);
+        background-size: 0% 100%;
+        animation: hoverbackalter 3s ease-in-out alternate infinite;
+       background-image: linear-gradient(to left, rgb(172, 16, 16),rgb(99, 13, 13) );
+       border: none;
+      }
+
+      @keyframes hoverbackalter{
+       0%{
+        background-color: rgb(143, 5, 5);
+       }
+       20%{
+        background-color: #7c0202;
+        border-bottom: 1px solid rgb(119, 113, 113);
+       }
+       40%{
+        background-color: #810404;
+        border: none;
+       }
+       50%{
+        background-color: #7c0202;
+        border: none;
+       }
+       60%{
+        background-color: #790303;
+        border-top: 2px solid rgb(116, 111, 111);
+       }
+       80%{
+        background-color: rgb(143, 5, 5);
+        border: none;
+       }
+      }
+      
+  </style>
+</head>
+<body>
+  <div class="produ-description-container">
+    <h2>Essencial</h2>
+    <p>Aroma herbal</p>
+  </div>
+
+  <aside>
+    <img id="iimage-righterbacklazyfadein" src="intro-fade-rightnew.png" alt="Fundo" />
+    
+  </aside>
+
+  <a id="ibackpgine-bottom" href="#">Voltar</a>
+
+  
+</body>
+</html>

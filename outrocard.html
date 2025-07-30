@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Slider</title>
+ <style>
+    body{
+        transition: all 0.6s ;
+        view-transition-name: background-basis;
+    }
+
+    ::view-transition-old(background-basis),
+    ::view-transition-new(background-basis){
+        animation: basis 4s ease;
+    }
+
+    @keyframes basis{
+      0%{
+        max-width: 1400px;
+        opacity: 1;
+      }
+      100%{
+        max-width: 900px;
+        opacity: 0;
+      }
+    }
+
+  :root {
+   --shadowcolor: #6e0808;
+  }
+
+  body {
+   
+   background: linear-gradient(to left, #e7e5e5f1, #b6b0b06c, #a8a2a23f);
+   
+  }
+
+  header {
+    margin-bottom: 140px;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 120%;
+   height: 66px;
+   background-image: linear-gradient(to right, #200101, var(--shadowcolor));
+   box-shadow: 1px 2px 90px;
+  }
+
+  .checkidea-testprodu {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 30px;
+  }
+
+  .radios {
+   display: flex;
+   gap: 2px;
+   margin-bottom: 20px;
+   margin-left: 49%;
+   margin-top: 84px;
+   
+  }
+
+  input[type="radio"] {
+   display: none;
+   
+  }
+
+  .radios label{
+  border: 1px solid var(--shadowcolor);
+  height: 10px;
+  width: 10px;
+  padding: 0;
+  border-radius: 20%;
+  margin-left: 30px;
+
+  }
+
+ 
+
+ .radioback{
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+ }
+  
+
+  .product-slider {
+   position: relative;
+   width: 100%;
+   height: 500px;
+   margin-left: 2%;
+   gap: 30px;
+   perspective: 900;
+  }
+
+  .slide-img {
+    transform-style: preserve-3d;
+   position: absolute;
+   width: 280px;
+   padding: 1px;
+   height: 390px;
+   top: 76px;
+   background-size: cover;
+   background-position: center;
+   border: 10px solid var(--shadowcolor);
+   border-top-left-radius: 30px;
+   border-bottom-right-radius: 20px;
+   transition: all 0.5s ease;
+   filter: blur(2px);
+   z-index: 0;
+  background-position: center;
+  background-size: contain;
+  }
+
+#ilefter{
+  margin-left: 40px;
+  
+}
+
+#irighter{
+  margin-left: 30px;
+}
+
+input#iradio1:checked ~ .radioback{
+  margin-top: -20px;
+}
+  input#iradio1:checked ~ .product-slider #ilefter {
+   margin-left: 42vw;
+   z-index: 2;
+   filter: none;
+   height: 430px;
+   margin-top: -30px;
+   border: 9px solid  #790404;
+   transform-style: preserve-3d;
+   transition: margin-left 0.7s ease;
+  }
+
+  input#iradio1:checked ~ .product-slider #icenter {
+   margin-left: 61vw;
+  height: 320px;
+  width: 200px;
+  margin-top: 25px;
+   z-index: 1;
+   filter: blur(3px);
+   
+   
+   
+  }
+
+  input#iradio1:checked ~ .product-slider #irighter {
+   margin-left: 26vw;
+  margin-top: 26px;
+   display: flex;
+   z-index: 0;
+   filter: blur(3px);
+   height: 320px;
+   width: 200px;
+  }
+
+  input#iradio2:checked ~ .product-slider #icenter:hover{
+  transform: scale(1.1);
+  margin-top: -30px;
+  margin-right: 120px;
+  
+}
+
+  input#iradio2:checked ~ .product-slider #ilefter {
+   margin-left: 28vw;
+   z-index: 1;
+   filter: blur(2px);
+     height: 320px;
+  width: 200px;
+  margin-top: 25px;
+   z-index: 1;
+   filter: blur(3px);
+  
+  }
+
+  input#iradio2:checked ~ .product-slider #icenter {
+   margin-left: 42vw;
+   z-index: 2;
+   filter: none;
+   height: 430px;
+   margin-top: -30px;
+   border: 9px solid  #790404;
+   transform-style: preserve-3d;
+   transition: margin-left 0.7s ease;
+   transform-style: preserve-3d;
+   
+  }
+
+  input#iradio2:checked ~ .product-slider #irighter {
+   margin-left: 60vw;
+   height: 320px;
+   width: 200px;
+   margin-top: 27px;
+   z-index: 1;
+   filter: blur(3px);
+  }
+
+  input#iradio3:checked ~ .product-slider #ilefter {
+   margin-left: 60vw;
+   z-index: 0;
+   filter: blur(3px);
+   z-index: 1;
+   filter: blur(2px);
+     height: 320px;
+  width: 200px;
+  margin-top: 25px;
+   z-index: 1;
+   filter: blur(3px);
+  
+   
+  }
+
+  input#iradio3:checked ~ .product-slider #icenter {
+   margin-left: 26vw;
+   z-index: 1;
+   filter: blur(2px);
+   z-index: 1;
+   filter: blur(2px);
+     height: 320px;
+  width: 200px;
+  margin-top: 25px;
+   z-index: 1;
+   filter: blur(3px);
+  
+  }
+
+  input#iradio3:checked ~ .product-slider #irighter {
+   margin-left: 42%;
+   z-index: 2;
+   filter: none;
+   height: 400px;
+   z-index: 1;
+   
+  
+  }
+
+  .slide-text {
+ position: absolute;
+ bottom: -30px; 
+ width: 100%;
+ left: 0;
+ text-align: center;
+ opacity: 0;
+ transition: opacity 0.3s ease;
+ color: #333;
+ font-weight: 600;
+ pointer-events: none;
+}
+
+input#iradio1:checked ~ .product-slider #ilefter .slide-text {
+ opacity: 1;
+ display: block;
+ pointer-events: auto;
+}
+input#iradio2:checked ~ .product-slider #icenter .slide-text {
+ opacity: 1;
+ pointer-events: auto;
+}
+input#iradio3:checked ~ .product-slider #irighter .slide-text {
+ opacity: 1;
+ pointer-events: auto;
+}
+
+input#iradio1:checked ~  .product-slider #ilefter:hover{
+  transform: scale(1.1);
+  margin-top: -30px;
+  margin-right: 120px;
+}
+
+input#iradio1:checked ~ .product-slider #ileft:hover #icenter{
+  margin-left: 90vw;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    padding:10px;
+    margin-top: 12%;
+    margin-left: -15px;
+    height: 110px;
+    width: 120%;
+    padding: 40px;
+   }
+
+   .footer-textcontent{
+    
+    border-left: 2px solid;
+    padding-left: 10px;
+    margin-right: 82%;
+    margin-top: 50px;
+    margin-left: 10px;
+    color: white;
+    letter-spacing: 4px;
+   }
+
+   .radio-container{
+    margin-left: 30px;
+   }
+
+   #icopy-p, #iunder-p{
+    margin-left: 10px;
+   }
+
+   a{
+    text-decoration: none;
+    margin-left: 20%;
+    
+   }
+
+   svg{
+    margin-top: 90px;
+   }
+
+   h2{
+    margin-left: -5px;
+    transform: rotate(90deg);
+   
+    width: 20px;
+   }
+
+   section{
+    margin-top: -80px;
+    margin-left: 30%;
+   }
+
+   @media screen and (max-width: 980px){
+    body{
+        max-width: 400px;
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.164), rgba(51, 46, 46, 0.041),rgba(53, 51, 51, 0.322));
+    }
+    .product-slider{
+        margin-left: -80px;
+    }
+    #icenter{
+        display: flex;
+        width: 20px;
+        margin-left: -10px;
+    }
+    button{
+        margin-top: -20px;
+        display: flex;
+    }
+
+    .product-slider {
+        height: 330px;
+    }
+    .product-slider:hover{
+        cursor: none;
+    }
+
+    #irighter{
+        margin-left: 50%;
+        display: flex;
+    }
+    #ipgini-linkbut{
+        display: flex;
+        margin-top: 85px;
+        padding: 10px;
+        margin-left: -60px;
+        padding: 10px;
+        padding-left: 10px;
+        width: 10px;
+        height: 20px;
+        
+    }
+    #icard-linkicon{
+       margin-top: -10px;
+       height: 20px;
+       margin-top: 90px;
+    }
+    svg{
+        display: flex;
+        margin-top: -2px;
+        margin-left: 20px;
+    }
+    .radios{
+        display: flex;
+        margin-top: 50%;
+        margin-left: 190px
+    }
+    section{
+        margin-left: 50%;
+        justify-content: center;
+        display: flex;
+    }
+    header{
+        width: 600px;
+    }
+
+    footer{
+        margin-top: 60%;
+        max-width: 20px;
+        padding: 10px;
+        border:none;
+        height: 170px;
+    }
+    .footer-textcontent{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: none;
+    }
+   }
+
+   @media screen and(max-width: 770px){
+    .footer-textcontent{
+        border: none;
+        display: flex;
+    }
+    button{
+        display: flex;
+        margin-top: -30px;
+    }
+    nav{
+      border: none;
+      border-radius: 10px
+    }
+   }
+
+   @media screen and(max-width: 500px){
+    nav{
+      border:none;
+      display: none;
+    }
+   }
+
+
+   
+  
+ </style>
+</head>
+<body>
+ <header></header>
+
+  
+
+
+  <input type="radio" id="iradio1" name="option" class="radioback" checked>
+  <input type="radio" id="iradio2" name="option" class="radioback" checked>
+  <input type="radio" id="iradio3" class="radioback" name="option" checked>
+  
+
+
+  <div class="product-slider">
+   <img class="slide-img" style="background-position: center;background-size: contain;" src="lefter-image.png" id="ilefter" ></img>
+    <img src="" id="produ-imgleft-tras">
+   
+   <img class="slide-img" src="righterimage.png" id="icenter"></img>
+   <img src="" id="produ-imgcenter-tras">
+
+   <img class="slide-img" src="redremove.png" id="irighter" ></img>
+ <img src="" id="produ-imgleft-tras">
+
+  </div>
+  
+  <div class="radios">
+   <label for="iradio1"></label>
+   <label for="iradio2"></label>
+   <label for="iradio3"></label>
+  </div>
+
+  <h2>DSDSd</h2>
+
+  <section>
+  
+  <a href="index.html"  id="ipgini-linkbut" style=" background-color: #5c0404;color: rgb(196, 190, 190);width: 60px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 7px ;
+  padding-bottom: 9px;
+  padding-left: 20px;
+  border-radius: 90px;
+  box-shadow: -3px 10px 1px ;
+  text-decoration: none;
+  padding-right: 15px;
+  ">Voltar</a>
+
+  <a href="" id="icard-linkicon" style="width: 60px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #5c0404;
+  padding: 7px ;
+  padding-bottom: 9px;
+  padding-left: 20px;
+  border-radius: 90px;
+  box-shadow: -3px 10px 1px ;
+  color: rgb(196, 190, 190);
+  text-decoration: none;
+  animation: pulsare 4s ease-in-out alternate ;
+  padding-right: 15px;
+  padding-top: 10px;">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+  <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"/>
+</svg>
+  </a>
+
+  </section>
+
+  <footer>
+
+   <div class="footer-textcontent">
+   <p id="icopy-p">&copy; 01809</p>
+   <p id="iunder-p">@andrey_damas</p>
+   </div>
+
+  </footer>
+
+
+ </div>
+</body>
+</html>

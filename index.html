@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Manufacturing+Consent&family=Parastoo:wght@400..700&display=swap" rel="stylesheet">
+    <title>PerfumeConceito</title>
+    <style>
+
+        body{
+            background-image: linear-gradient(to left, rgb(94, 92, 92),rgba(241, 241, 241, 0.836),rgb(216, 212, 212));
+        }
+        header{
+
+            background-color: white;
+            height: 55px;
+            border: 2px solid;
+            box-shadow: 1px 4px 20px;
+            margin-top: -10px;
+            margin-left: -9px;
+            margin-right: -10px;
+            max-height:70px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: var(--testtexto--);
+          
+        }
+        
+        :root{
+           --fundocolor--: rgb(119, 84, 9);
+           --testtexto--: linear-gradient(to right, red, blue),
+        }
+
+           li:nth-child(3){
+            margin-left: 80%;
+            margin-top: -43px;
+           
+           
+        }
+        li:nth-child(2){
+            padding-top: 9px;
+            margin-left: 24%;
+        }
+
+        li:nth-child(1){
+            margin-top: -40px;
+          margin-left: 20%;
+  
+        }
+
+        
+
+        #iicon-list{
+            height: 30px;
+            width: 26px;
+            margin-top: 10px;
+            display: flex;
+            margin-left: 20px;
+        }
+        ul{
+            list-style: none;
+            max-height: 20px;
+            display: flex;
+            gap: 3px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        a{
+            text-decoration: none;
+           
+
+        }
+        li{
+            margin-top: -50px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight: lighter;
+        }
+     
+
+
+    
+
+        ul #ilog-icon, #iprodu-icon{
+      
+   color: rgb(56, 55, 55);
+   font-weight: lighter;
+           
+        }
+
+        #iprodu-icon{
+            padding-top: -10px;
+            
+        }
+        
+        nav{
+           padding-bottom: 40px;
+            height: 387px;
+            width: 130%;
+            margin-left: -15px;
+            margin-top: -190px;
+           background-image: linear-gradient(to left, rgb(44, 44, 44),rgb(32, 32, 32),rgba(63, 62, 62, 0.664),rgb(71, 70, 70),rgba(46, 45, 45, 0.863));
+        }
+
+        #imeio-img{
+            margin-top: -190px;
+         margin-left: 44%;
+            animation: sobe 2.6s ease-in-out alternate;
+            position: absolute;
+        }
+
+        #ip1::after{
+            content: " |";
+        }
+
+        #ip2::before{
+            content: " | ";
+        }
+
+        @keyframes sobe{
+            0%{
+                display: none;
+                margin-top: 900px;
+                opacity: 3;
+                filter: blur(3px);
+              
+            }
+
+            20%{
+                
+                filter: blur(2px);
+                opacity: 2;
+            }
+
+            30%{
+              filter: blur(3px);
+            }
+            50%{
+                margin-top: -100px;
+                transition: 3.6s ease-in-out;
+                
+            }
+100%{
+   
+    margin-top: -180px;
+}
+
+        }
+
+        @keyframes background-change{
+            0%{
+                 background-image: linear-gradient(to left, rgb(44, 44, 44),rgb(32, 32, 32),rgba(63, 62, 62, 0.664),rgb(99, 97, 97),rgb(46, 45, 45));
+            }
+            50%{
+                 background-image: linear-gradient(to left, rgb(73, 73, 73),rgb(107, 107, 107),rgba(105, 105, 105, 0.664),rgb(136, 133, 133),rgb(46, 45, 45));
+            }
+            100%{
+
+            }
+        }
+
+        @keyframes desliz{
+            0%{
+                margin-left: -20px;
+            }
+
+            50%{
+                margin-left: 24%;
+                transition: margin-left 5s ease;
+            }
+            100%{
+                margin-left: 31%;
+            }
+        }
+
+        @keyframes desliz2{
+            0%{
+                
+                margin-right: -20px;
+            }
+            100%{
+                margin-left: 0px;
+            }
+        }
+      
+      
+
+        #ip1, #ip2{
+           display: flex;
+      letter-spacing: 4px;
+
+         font-size: 12px;
+         font-weight: lighter;
+         color: #38210A;
+        }
+
+        #ip1{
+            display: flex;
+            margin-top: 190px;
+            animation: desliz 3.5s;
+          padding-top: 170px;
+         margin-left: 31%;
+        border-right: 1px solid black;
+         
+        }
+
+        #ip2{
+            
+          margin-left: 45%;
+           margin-top: -20px;
+        }
+
+        section{
+            margin-top: 120px;
+            height: 140px;
+         background-image: linear-gradient(to left, #922222,#801b1b);
+            width: 395px;
+            margin-left: 39%;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 10px;
+        }
+
+        #iseca {
+          
+         margin-top: -120px;
+            color: white;
+            display: flex;
+            padding-top: 90px;
+            height: 0px;
+            padding-left: 52%;
+             font-family: "Playfair Display", serif;
+        font-weight: lighter;
+        font-size: 10px;
+            margin-bottom: 10px;
+          
+          
+        }
+      
+       h5{
+    font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #FBE8D2;
+  margin-left: 45%;
+  margin-top: -80px;
+       }
+       
+       #iimg-topointro{
+        margin-left: 1037px;
+        margin-top: -70px;
+        display: flex;
+        
+       }
+
+       article div img{
+       margin-left: 33%;
+       margin-top: 130px;
+       }
+
+       #imidi1{
+  margin-right: -310px;
+  margin-left: 67%;
+
+       }
+
+       #imidi2{
+        margin-left: -1%;
+       }
+     
+       .midi p{
+    color: #91724e98;
+      font-family: "Spectral", serif;
+  font-weight: lighter;
+  font-size: 9px;
+  margin-left: 44%;
+  margin-top: -20px;
+  font-style: italic;
+       }
+
+       .midi{
+        margin-top: 60px;
+        margin-left: 110px
+       }
+
+       #iprodu-container-image{
+        margin-top: 190px;
+        margin-left: 38%;
+       }
+
+       #icatalog{
+        margin-left: 48%;
+        margin-top: 120px;
+        font-weight: lighter;
+        font-family: "Spectral", serif;
+        color: rgb(235, 219, 190);
+        background-color: rgba(117, 78, 6, 0.582);
+        width: 60px;
+        padding: 10px;
+        padding-left: 10px;
+        border-radius: 50%
+
+       }
+
+       #ilog-icon,#ilonlight-logo,#iprodu-icon{
+        text-shadow: 1px 1px 1px rgba(70, 69, 69, 0.747);
+       }
+
+       .container{
+margin-left: 20px;
+        position: relative;
+        width: 120px;
+        height: 190px;
+        perspective: 1000px;
+       }
+
+       .flip{
+     transition: 1.6s ease-in-out;
+     transform-style: preserve-3d;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+       }
+
+       #iimg-frente, #iimg-tras{
+        position: absolute;
+        object-fit: cover;
+        backface-visibility: hidden;
+        width: 100%;
+       
+        height: 100%;
+       }
+
+       #iimg-frente{
+        background-size: cover;
+       }
+
+       #iimg-tras{
+       transform: rotateY(180deg);
+       }
+
+       .container:hover .flip{
+        transform: rotateY(180deg);
+       }
+
+@media screen and (max-width: 800px){
+   #ilog-icon{
+    display: flex;
+    margin-left: 120px;
+    margin-right: -29px;
+    
+   }
+   #iseca{
+    margin-top: 20px;
+    display: flex;
+    margin-left: -18px;
+    color: #38210A;
+    background-color: var(--shadowcolor--);
+    text-shadow: 1px 1px 1px;
+    height: 20px;
+    font-size: 10px;
+    animation: pulsare 3s ease-in-out ;
+    
+    
+   }
+   #iseca::after{
+    content: "|";
+
+   }
+
+   #iseca::before{
+    content: "|";
+   }
+   #section-box{
+margin-left: 50%;
+   }
+   li:nth-child(2){
+    margin-left: -20px;
+    display: none;
+   }
+   li:nth-child(3){
+    margin-left: -20px;
+   }
+   #linkagem-produ{
+    margin-top: -20px
+   }
+   section{
+    margin: left 20px;
+    display: none;
+   }
+   #imidi2{
+    margin-left:240px;
+    margin-right: -20px;
+    display: none;
+   }
+   #imidi1{
+    margin-left: px;
+    display: none;
+   }
+  
+    
+}
+   @media screen and (max-width: 980px){
+        body{
+            max-width: 220vw;
+        }
+        #ilog-icon{
+            margin-left: 20px;
+        }
+        #ilinlight-logo{
+            margin-left: -180px;
+        }
+        #iprodu-icon{
+            margin-left: 10px;
+        }
+        nav{
+            height: 150px;
+        }
+        #ip1{
+           padding: 60px;
+           margin-left: 20px;
+        }
+        #ip2{
+            margin-left: 320px;
+
+        }
+        #linkagem-produ{
+            margin-left: -20px;
+            
+        }
+        #iseca{
+               margin-top: 90px;
+    display: flex;
+    margin-left: -20px;
+    margin-top: 20px;
+    position: relative;
+    color: #38210A;
+    animation: pulsare 3s ease-in-out ;
+    letter-spacing: 10px;
+    font-size: 12px;
+    background-color: var(--shadowcolor--);
+   
+    height: 10px;
+    width: 1px;
+
+    padding-bottom: 10px;
+    
+    
+        }
+    
+        .linkagem-produ a{
+            height: 20px;
+        }
+        section{
+            display: none;
+        }
+
+        #imidi2{
+            margin-left: 240px
+        }
+
+        #icatalog{
+            margin-left: 50%;
+            display: flex;
+        }
+}
+@keyframes pulsare{
+    0%{
+        transform: scale(0.7);
+        background-position: 100% 100%;
+        background-image: linear-gradient(to left, var(--shadowcolor--),rgb(116, 5, 5),rgba(122, 8, 8, 0.568),rgba(255, 0, 0, 0.562),rgba(104, 8, 8, 0.678));
+    }
+    20%{
+        transform: scale(0.8);
+    background-position: 100% 50%;
+      background-image: linear-gradient(to left, var(--shadowcolor--),rgba(153, 13, 13, 0.733),rgba(146, 14, 14, 0.568),rgba(119, 10, 10, 0.507),rgba(109, 5, 5, 0.678));
+    }
+
+    30%{
+        transform: scale(0.9);
+        background-position: 100% 100%;
+            background-image: linear-gradient(to 47deg, var(--shadowcolor--),rgb(116, 5, 5),rgba(122, 8, 8, 0.568),rgba(85, 4, 4, 0.562),rgba(104, 8, 8, 0.678));
+    }
+
+    50%{
+        transform: scale(0.8);
+        background-position: 100% 100%;
+          background-image: linear-gradient(to right, var(--shadowcolor--),rgb(116, 5, 5),rgba(122, 8, 8, 0.568),rgba(95, 4, 4, 0.562),rgba(104, 8, 8, 0.678));
+          
+    }
+
+    60%{
+        transform: scale(1.1);
+        background-position: 100% 100%;
+          background-image: linear-gradient(to 16deg, var(--shadowcolor--),rgb(116, 5, 5),rgba(122, 8, 8, 0.568),rgba(70, 2, 2, 0.562),rgba(104, 8, 8, 0.678));
+    }
+
+    100%{
+        transform: scale(1.0);
+        background-position: 100% 100%;
+          background-image: linear-gradient(to left, var(--shadowcolor--),rgb(116, 5, 5),rgba(122, 8, 8, 0.568),rgba(94, 5, 5, 0.562),rgba(104, 8, 8, 0.678));
+    }
+ }
+
+@media screen and (max-width: 980px){
+    body{
+        max-width: 220vw;
+    }
+    #ilog-icon{
+        margin-left: -50px;
+    }
+    #ilonlight-logo{
+    
+        margin-left: -20px;
+    }
+    
+
+ul li{
+    margin-left: -10px;
+}
+#ilonlight-logo{
+    margin-left: 90px;
+}
+#ip1{
+    animation: none;
+    margin-left: 50px;
+    padding-top: 56px;
+    font-size: 15px;
+    border-right: none;
+
+}
+
+#ip2{
+   
+   display:none;
+}
+#imeio-img{
+    margin-top: -130px;
+    margin-left: 170px
+}
+  nav{
+            height: 350px;
+        }
+        #ip1{
+           padding: 60px;
+           margin-left: 10px;
+        }
+        #ip2{
+            margin-left: 320px;
+
+        }
+        #linkagem-produ{
+            margin-left: -20px;
+            
+        }
+        section{
+            background-color: red;
+            margin-left:20px
+        }
+        #iseca{
+            margin-top: 1px;
+            padding-bottom: 2px;
+        }
+        #imidi-p{
+            margin-left: 130px
+        }
+        #icatalog{
+            margin-left: 200px;
+        }
+        .container{
+            margin-top: 120px;
+        }
+        #imeio-img{
+            margin-left: 38%;
+        }
+        li:nth-child(1){
+            margin-left:  90px;
+            margin-right: 190px;
+        }
+        #ip1{
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+       
+        #imidip{
+            margin-left: 20px
+        }
+}
+
+@media screen and (max-width: 1300px){
+    #ip2{
+        display: none;
+    }
+     #ip1{
+           padding: 60px;
+           margin-left: 10px;
+            animation: fade-letter 4s ease alternate;
+        }
+        #linkagem-produ{
+            margin-left: 20px;
+            animation: fade-letter 4s ease;
+        }
+        #iseca{
+            margin-top: -10px;
+        }
+        #iseca:hover{
+            transform: scale(1.1);
+            margin-top: -20px;
+        }
+        
+}
+
+@keyframes fade-letter{
+    0%{
+        opacity: 3;
+        filter: blur(4px);
+        letter-spacing: 16px;
+    }
+    20%{
+        opacity: 3;
+        filter: blur(3px);
+        letter-spacing: 14px;
+    }
+    50%{
+        opacity: 2;
+        filter: blur(2px);
+        letter-spacing: 12px;
+    }
+
+    100%{
+        opacity: 0;
+        filter: brightness(3px);
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and(max-width: 500px){
+    #icatalog{
+       background-color: red;
+       display: none;
+    }
+    body{
+        background-color: red;
+    }
+    #iseca{
+        margin-top: 90px;
+    }
+}
+   a{
+    margin-top: 10px;
+   }
+
+   @media screen and(max-width: 1400px){
+    #icatalog{
+        display: none;
+    }
+   }
+
+   @media screen and(max-width: 767px){
+    #icatalog{
+        display: none;
+    }
+   }
+
+   @media screen and (max-width: 460px){
+    #icatalog{
+
+        display: none !important;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30% ;
+        
+    }
+
+    #iseca{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: 35%;
+        
+    }
+
+    #imidi-p{
+        text-align: center;
+        margin-left: 35%;
+      
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+             <svg id="iicon-list" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>
+
+        <ul>
+             
+            <li><a id="ilog-icon" href="testform.html" >Login</a></li>
+          <li id="ilonlight-logo" class="icon-logo" contenteditable="true">LongLiightness,io</li>
+            <li><a id="iprodu-icon" href="outrocart.html">Produtos</a></li>
+             
+        </ul>
+        
+    </header>
+
+    <nav>
+    <P id="ip1">Combinação</P>
+
+  <p id="ip2" class="animate__animated animate__backInRight">Teste</p>
+
+    <img id="imeio-img" src="Captura_de_tela_2025-07-15_091207-removebg-preview.png" alt="Imagem de perfume vermelho Subindo">
+
+   
+  
+    </nav>
+     
+ <section>
+     
+    <div class="section-box">
+     
+    </div>
+ 
+ </section>
+
+  <div id="linkagem-produ">
+
+ <h5>A fragrancia que combina</h5>
+<img id="iimg-topointro" src="linkagem-image.png" alt="imagem de perfume vermelho fino a esquerda com animação de entrada">
+    <a id="iseca" href="especify.html">Saber</a>
+
+  </div>
+
+  <article>
+    <div class="midi">
+        <img id="imidi1"  src="img-right-midle.png" alt="Imagem de perfume a direita">
+    <img id="imidi2" src="img-left-midle.png" alt="Imagem de perfume a esquerda">
+    <p id="imidi-p">Perfumes em frascos prontos, com composições variadas.</p>
+    </div>
+
+    <p id="icatalog">Catálogo</p>
+
+ 
+    
+  </article>
+   <div class="container">
+    <div class="flip">
+        <img id="iimg-frente" src="flip1exemplo.png" alt="Imagem de catalogo de perfumaria">
+        <img id="iimg-tras" src="flip1exemplo.png" alt="">
+
+         <div class="container">
+    <div class="flip">
+       
+    </div>
+  </div>
+</body>
+</html>
